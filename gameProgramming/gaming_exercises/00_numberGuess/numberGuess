@@ -1,0 +1,78 @@
+# Player needs to guess a number.
+# Select the secret number from a given range.
+# Compare guess to the secret number.
+# What happens if they guess wrong?
+   # Tell them it's wrong.
+   # Tell them how many guesses are left.
+   # Tell them if it's too high/low
+# What if they guess right?
+   # Tell them the guess is correct.
+   # Award a point.
+# What happens if they run out of guesses?
+   # Display you lose.
+   # Reward point to CPU
+# Check to see if player or CPU has >= 3 points, if so they win.
+
+import random # Import the random module to our code.
+
+# DECLARATIONS
+secretNumber = -1
+playerGuess = -1
+playerScore= 0
+cpuScore = 0
+numGuesses = 0
+playerName = ""
+difficulty= ""
+rangeMIN = -1
+rangeMax = -1
+numAttempts = -1
+
+print("""__| |____________________________________________| |__
+(__   ____________________________________________   __)
+   | |                                            | |
+   | |  Welcome to guess a number dude.           | |
+   | |                                            | |
+   | |               2023 vs                      | |
+   | |                                            | |
+   | |                                            | |
+ __| |-___________________________________________| |__
+(__   ____________________________________________   __)
+   | |                                            | |""")
+
+# CPU SECRET NUMBER GENERATION
+secretNumber = random.randint(0, 20)
+secretNumber += 1
+
+# GAME LOOP
+print("you need to guess a number from 0 to 20 you have four guesses, \n if you guess right, you get a point \n if you don't get it right in four guesses the cpu get's a point")
+# ADD CODE HERE TO CHANGE DIFFICULTY
+#print
+while playerScore != 3 and cpuScore != 3:
+   # DIFFICULTY code needs to be BEFORE the round starts
+   # pass -- Tells python to skip this block of code.
+   print(f"player score: {playerScore}\nCPU Score: {cpuScore}.\n")
+   
+   numGuesses = 0  
+   for guesses in range(4):
+      #PUT DIFFICULTY CODE
+      print(f"You have {4- numGuesses} guesses remaining")
+   playerGuess = int(input("Type a number from 0 to 20 and press ENTER"))
+        # Input() saves whatever you type in as a string.
+        # int() will convert to an INTEGER
+        # float() will convert to a FLOAT/ Decimal
+        #  print("You have chosen {playerGuess}. let's see if you're right!\n")
+   if playerGuess == secretNumber:
+    print("Whoa jhitt, What a guess! You're right!\n")
+   playerScore += 1
+   break # IMMEDIATLY EXIT ANY LOOP
+else: 
+  print("Li bra that was a trash guess, womp womp.\n")  
+if playerGuess> secretNumber:
+      print("Too high jhitt")
+else:
+      print("Your guess is too low bra.\n")
+numGuesses += 1
+if playerGuess != secretNumber:
+   cpuScore += 1
+   print ("The CPU gets a point!")
+   
