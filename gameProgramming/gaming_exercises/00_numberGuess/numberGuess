@@ -26,34 +26,37 @@ difficulty= ""
 rangeMIN = -1
 rangeMax = -1
 numAttempts = -1
+secretNumber = random.randint(0, 20)  
 
 print("""__| |____________________________________________| |__
 (__   ____________________________________________   __)
    | |                                            | |
    | |  Welcome to guess a number dude.           | |
    | |                                            | |
-   | |               2023 vs                      | |
-   | |                                            | |
+   | |               2023                         | |
+   | |              jermya  G.                    | |
    | |                                            | |
  __| |-___________________________________________| |__
 (__   ____________________________________________   __)
    | |                                            | |""")
 
+playerName= input("What should i call you/\n type your name and press enter.\n")
+
+print(f"You want me to call you {playerName}?")
 # CPU SECRET NUMBER GENERATION
-secretNumber = random.randint(0, 20)
 secretNumber += 1
 
 # GAME LOOP
 print("you need to guess a number from 0 to 20 you have four guesses, \n if you guess right, you get a point \n if you don't get it right in four guesses the cpu get's a point")
 # ADD CODE HERE TO CHANGE DIFFICULTY
 #print
-while playerScore != 3 and cpuScore != 3:
+while playerScore != 3 and cpuScore != 3: 
+
    # DIFFICULTY code needs to be BEFORE the round starts
    # pass -- Tells python to skip this block of code.
    print(f"player score: {playerScore}\nCPU Score: {cpuScore}.\n")
-   
-   numGuesses = 0  
    for guesses in range(4):
+       
       #PUT DIFFICULTY CODE
       print(f"You have {4- numGuesses} guesses remaining")
    playerGuess = int(input("Type a number from 0 to 20 and press ENTER"))
@@ -61,18 +64,21 @@ while playerScore != 3 and cpuScore != 3:
         # int() will convert to an INTEGER
         # float() will convert to a FLOAT/ Decimal
         #  print("You have chosen {playerGuess}. let's see if you're right!\n")
+   print (f"you chose {playerGuess}")
    if playerGuess == secretNumber:
-    print("Whoa jhitt, What a guess! You're right!\n")
-   playerScore += 1
-   break # IMMEDIATLY EXIT ANY LOOP
-else: 
-  print("Li bra that was a trash guess, womp womp.\n")  
-if playerGuess> secretNumber:
-      print("Too high jhitt")
-else:
-      print("Your guess is too low bra.\n")
-numGuesses += 1
-if playerGuess != secretNumber:
-   cpuScore += 1
-   print ("The CPU gets a point!")
+       print(f"Whoa {playerName}, What a guess! You're right!\n")
+       playerScore += 1 
+   else:    
+       if playerGuess < secretNumber:
+          print ("Your guess is too low!\n")
+       else:
+         print("Your guess is too high.\n")
+   numGuesses+= 1
+   if playerGuess != secretNumber:
+      cpuScore+= 1
+      print(f"Guess you couldn't get it {playerName}.\n")
+   else:
+      print(f"{playerName} you've outsmarted the cpu this time.\n")
+
+
    
