@@ -48,17 +48,18 @@ secretNumber += 1
 
 # GAME LOOP
 print("you need to guess a number from 0 to 20 you have four guesses, \n if you guess right, you get a point \n if you don't get it right in four guesses the cpu get's a point")
-# ADD CODE HERE TO CHANGE DIFFICULTY
+# ADD CODE HERE TO CHANGE DIFFICULTY -- NOT FINISHED AS OF 09/28/23
 #print
 while playerScore != 3 and cpuScore != 3: 
 
    # DIFFICULTY code needs to be BEFORE the round starts
    # pass -- Tells python to skip this block of code.
    print(f"player score: {playerScore}\nCPU Score: {cpuScore}.\n")
-   for guesses in range(4):
-       
-      #PUT DIFFICULTY CODE
-      print(f"You have {4- numGuesses} guesses remaining")
+   for guesses in range(4): # This loop starts each 'round' of the game.  
+      # Any code you want to run during each 'round' needs to be in the for loop's scope. 
+      # To do that, those lines of code should indented at least 4 spaces.  
+      
+      print(f"You have {4- numGuesses} guesses remaining") # This line prints 4 times each time.
    playerGuess = int(input("Type a number from 0 to 20 and press ENTER"))
         # Input() saves whatever you type in as a string.
         # int() will convert to an INTEGER
@@ -81,4 +82,5 @@ while playerScore != 3 and cpuScore != 3:
       print(f"{playerName} you've outsmarted the cpu this time.\n")
 
 
-   
+# Because your code is not indented correctly, the way your code runs is not correct.
+# As soon as I guess a number, it tells me I am wrong and gives a point to the CPU.  
