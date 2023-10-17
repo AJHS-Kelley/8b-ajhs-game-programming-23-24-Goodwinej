@@ -61,3 +61,4 @@ while weaponNum < len(weaponList):
 while weaponNum < len(weaponList):
     if weaponNum == 6 and weaponList[6] == True:
         print("You are wielding a glock 19 gen 5 wit a beam,\n")        
+        weaponNum += 1
