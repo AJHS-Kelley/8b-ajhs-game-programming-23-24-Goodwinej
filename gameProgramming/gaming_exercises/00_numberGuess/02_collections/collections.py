@@ -44,20 +44,20 @@ while weaponNum < len(weaponList):
     if weaponNum == 0 and weaponList[0] == True:
         print("You are wielding a glock 19 gen 5 wit a beam,\n")
 while weaponNum < len(weaponList):
-    if weaponNum == 0 and weaponList[0] == True:
+    if weaponNum == 1 and weaponList[1] == True:
         print("You are wielding a glock 19 gen 5 wit a beam,\n")  
 while weaponNum < len(weaponList):
-    if weaponNum == 0 and weaponList[0] == True:
+    if weaponNum == 2 and weaponList[2] == True:
         print("You are wielding a glock 19 gen 5 wit a beam,\n")
 while weaponNum < len(weaponList):
-    if weaponNum == 0 and weaponList[0] == True:
+    if weaponNum == 3 and weaponList[3] == True:
         print("You are wielding a glock 19 gen 5 wit a beam,\n")
 while weaponNum < len(weaponList):
-    if weaponNum == 0 and weaponList[0] == True:
+    if weaponNum == 4 and weaponList[4] == True:
         print("You are wielding a glock 19 gen 5 wit a beam,\n")                        
 while weaponNum < len(weaponList):
-    if weaponNum == 0 and weaponList[0] == True:
+    if weaponNum == 5 and weaponList[5] == True:
         print("You are wielding a glock 19 gen 5 wit a beam,\n")        
 while weaponNum < len(weaponList):
-    if weaponNum == 0 and weaponList[0] == True:
+    if weaponNum == 6 and weaponList[6] == True:
         print("You are wielding a glock 19 gen 5 wit a beam,\n")        
