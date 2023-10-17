@@ -29,3 +29,35 @@
 # else:
 #     print("You do not have that key. The door remains locked.")    
 
+weaponList = [
+    True, # glock 19 gen 5 wit a beam
+    False, # a hockey puck
+    False, # desert eagel
+    False, # gun shooting gun
+    False, # monkey gun
+    True, # jammin hipoint
+    True  # glock doookie
+]
+
+weaponNum = 0
+while weaponNum < len(weaponList):
+    if weaponNum == 0 and weaponList[0] == True:
+        print("You are wielding a glock 19 gen 5 wit a beam,\n")
+while weaponNum < len(weaponList):
+    if weaponNum == 0 and weaponList[0] == True:
+        print("You are wielding a glock 19 gen 5 wit a beam,\n")  
+while weaponNum < len(weaponList):
+    if weaponNum == 0 and weaponList[0] == True:
+        print("You are wielding a glock 19 gen 5 wit a beam,\n")
+while weaponNum < len(weaponList):
+    if weaponNum == 0 and weaponList[0] == True:
+        print("You are wielding a glock 19 gen 5 wit a beam,\n")
+while weaponNum < len(weaponList):
+    if weaponNum == 0 and weaponList[0] == True:
+        print("You are wielding a glock 19 gen 5 wit a beam,\n")                        
+while weaponNum < len(weaponList):
+    if weaponNum == 0 and weaponList[0] == True:
+        print("You are wielding a glock 19 gen 5 wit a beam,\n")        
+while weaponNum < len(weaponList):
+    if weaponNum == 0 and weaponList[0] == True:
+        print("You are wielding a glock 19 gen 5 wit a beam,\n")        
