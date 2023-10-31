@@ -42,12 +42,12 @@ HANGMAN_BOARD = ['''
 
 #PICK Word from the list
 def getRandomWord(wordList): # return a radom word from the list.
-   wordIndex = random.randint(0, len(wordList)- 1)
+   wordIndex = random.randint(0, len(wordList) - 1)
    # len(Listname) -1 is EXTREMLY COMMON FOR WORKING WITH LISTS.
    return wordList[wordIndex]
 
 def displayBOard(missedLetters, correctLetters, secretWord):
-    print(HANGMAN_BOARD;[len(missedLetters)])
+    print(HANGMAN_BOARD[len(missedLetters)])
     print()
 
     print('Missed Letters:', end = ' ')
