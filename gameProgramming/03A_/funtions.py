@@ -19,16 +19,16 @@ import random
 #
 #
 #
-def rollDice(numDice, sizeDice):
-    numRolled = 0
-    while numRolled < numDice:
-        roll = random.randint(1, sizeDice)
-        print(f"Roll: {roll}\n")
-        print(f"Sum: sum}\n")
-        numRolled += 1
-        sum += roll
-sum = 0
-rollDice(1, 20)
-rollDice(1, 25)        
+# def rollDice(numDice, sizeDice):
+#     numRolled = 0
+#     while numRolled < numDice:
+#         roll = random.randint(1, sizeDice)
+#         print(f"Roll: {roll}\n")
+#         print(f"Sum: sum}\n")
+#         numRolled += 1
+#         sum += roll
+# sum = 0
+# rollDice(1, 20)
+# rollDice(1, 25)        
 
-strength
+# strength
