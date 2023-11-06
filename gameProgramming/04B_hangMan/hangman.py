@@ -92,15 +92,25 @@ def displayBoard(missedLetters, correctLetters, secretWord):
         print(letter, end = ' ')
     print()
 
-
 def getGuess(alreadyGuessed):
      while True:
           print('Please guess a letter and press enter')
           guess = input()
+          guess = guess.lower()
+          if len(guess) != 1:
+              print('Please enter a single letter.')
+          elif guess in alreadyGuessed:
+              print('Letter has been guessed already.')
+          elif guess not in 'abcdefghijklmnopqrstuv':
+              print('please guess a Letter from the english alphabet.')
+          else:
+              return guess
 
+def playAgain():
+    print('Do you want to play again? yes or no?')
+    return input().lower().startswith('y')
 
-# i = 0
-# while i < 100:
-#    word= getRandomWord(words)
-#    print(word)
-#    i += 1
+# Introduce the game
+print('Welcome to Hangman bumbs')
+
+# Choose Difficulty
