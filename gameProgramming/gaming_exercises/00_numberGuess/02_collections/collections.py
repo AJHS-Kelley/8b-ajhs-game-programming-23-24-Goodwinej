@@ -45,7 +45,7 @@ while weaponNum < len(weaponList):
         print("You are wielding a glock 19 gen 5 wit a beam,\n")
 while weaponNum < len(weaponList):
     if weaponNum == 1 and weaponList[1] == True:
-        print("You are wielding a glock 19 gen 5 wit a beam,\n")  
+        print("You are wielding a a hockey puck,\n")  
 while weaponNum < len(weaponList):
     if weaponNum == 2 and weaponList[2] == True:
         print("You are wielding a glock 19 gen 5 wit a beam,\n")
@@ -62,3 +62,4 @@ while weaponNum < len(weaponList):
     if weaponNum == 6 and weaponList[6] == True:
         print("You are wielding a glock 19 gen 5 wit a beam,\n")        
         weaponNum += 1
+    
