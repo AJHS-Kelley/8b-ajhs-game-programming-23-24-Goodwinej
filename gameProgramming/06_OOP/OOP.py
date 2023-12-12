@@ -15,22 +15,40 @@ class Person: #USE PASCALCASE for ClassName
 
 person1 = Person("jermya", 16, 115.6)
 person2 = Person("mcGriddle",75, 365.5)
-print (person1)  
-print (person2)
+# print (person1)  
+# print (person2)
 
-if person1.weight > person2.weight:
-    print(f"{person1.name} weighs more than that {person2.name}\n")
-elif person1.weight == person2.weight:
-    print(f"{person1.name} and {person2.name} weigh the same.\n")
-else:
-    print (f'{person1.name} weighs less than {person2.name}')       
+# if person1.weight > person2.weight:
+#     print(f"{person1.name} weighs more than that {person2.name}\n")
+# elif person1.weight == person2.weight:
+#     print(f"{person1.name} and {person2.name} weigh the same.\n")
+# else:
+#     print (f'{person1.name} weighs less than {person2.name}')       
 
-if person1.age > person2.age:
-    print(f"{person1.name} is older than {person2.name}\n")
-elif person1.age == person2.age:
-    print(f"{person1.name} and {person2.name} are the same age.\n")
-else:
-    print (f'{person1.name} is younger than {person2.name}')           
+# if person1.age > person2.age:
+#     print(f"{person1.name} is older than {person2.name}\n")
+# elif person1.age == person2.age:
+#     print(f"{person1.name} and {person2.name} are the same age.\n")
+# else:
+#     print (f'{person1.name} is younger than {person2.name}')           
 
-person1.classFunction()
+# person1.classFunction()
 
+
+#Changingg Properties After Creation
+person1.name = "TURTLE MAN"
+print(person1.name)
+
+# Deleting properties -- DANGER WILL ROBINSON, DANGER!
+# THIS DOES NOT "RESET A PROPERTY, IT COMPLETELY GET RID OF IT.
+print(person1.name)
+del person1.weight
+# print (person1)
+
+# Deleting Obects -- delete them when you're completely done with it!
+del person1
+
+# Adding Properties to objects
+person2.weakness = 'kryptonite'
+print(person2)
+print (person2.weakness)
