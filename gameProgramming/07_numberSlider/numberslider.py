@@ -13,5 +13,13 @@ BOARDHIEGHT = 4 # ROW
 TILESIZE = 80 # WHAT UNIT DO YOU THINK THIS IS? PIXELS DUH.
 WINDOWWIDTH = 640 # MEASURED IN PIXELS
 WINDOWHEIGHT = 480 # MEASURED IN PIXELS
-FPS = 30 
+FPS = 30 # This  is maximum value! Won't make a slow computer run faster.
 BLANK = None
+
+# COLOR VALUES IN (R, G, B) format () w/ more than one value inside is a tuple
+# 0 = No value for that color, 255 = maximum value
+BLACK = (0, 0, 0)
+WHITE = (255, 255, 255)
+BRIGHTBLUE = (0, 50, 255)
+DARKTURQUOISE = (3, 54, 73)
+GREEN = (0, 204, 0)
