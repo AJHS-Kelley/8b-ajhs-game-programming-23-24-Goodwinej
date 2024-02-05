@@ -1,4 +1,6 @@
 # DNA Replication Game, Jermya Goodwine, v0.0
+# Your code identifies a match correctly but does not save the score to a file. 
+# Please see the screenshots to fix! 
 
 # Import Entire Modules -- Get the whole tool box.
 import time, datetime
