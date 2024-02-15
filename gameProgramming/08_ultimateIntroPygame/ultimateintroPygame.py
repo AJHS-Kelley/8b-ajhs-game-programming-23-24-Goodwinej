@@ -1,6 +1,7 @@
 # jermya goodwine, Introduction to pygame, v0.0
 import pygame
 from sys import exit
+# Almost finished, please get the last few tutorial videos completed. 
 
 pygame.init()
 screen = pygame.display.set_mode((800,400))
